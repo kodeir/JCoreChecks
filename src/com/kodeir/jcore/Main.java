@@ -11,10 +11,14 @@ public class Main {
 
     private static void checkInitialization(){
         System.out.println("*** check initialization order ***");
-        InitializationOrder initializationOrder = new InitializationOrder();
+        new InitializationOrder();
+        System.out.println();
 
         System.out.println("*** check references ***");
         new ReferenceJuggler();
+        System.out.println();
+
+
     }
 
 }
