@@ -18,7 +18,9 @@ public class Main {
         new ReferenceJuggler();
         System.out.println();
 
-
+        System.out.println("*** check finalize ***");
+        SimpleFinalize simpleFinalize = new SimpleFinalize();
+        System.out.println();
     }
 
 }
