@@ -1,5 +1,7 @@
 package com.kodeir.jcore;
 
+import com.kodeir.jcore.colls.FunWithCollections;
+
 /**
  * Created by Sergei Riabinin on 14.03.2017.
  */
@@ -20,6 +22,10 @@ public class Main {
 
         System.out.println("*** check finalize ***");
         SimpleFinalize simpleFinalize = new SimpleFinalize();
+        System.out.println();
+
+        System.out.println("*** check Collections ***");
+        FunWithCollections funWithCollections = new FunWithCollections();
         System.out.println();
     }
 
