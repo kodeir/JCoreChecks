@@ -16,12 +16,13 @@ public class FunWithCollections {
     public void measure(){
         System.out.println("Enter array size: ");
         int arraySize = IOWorker.parseInt();
-        System.out.println(manageTime(()->arrayListMaster.fill(arraySize)) + " ms");
+        System.out.println(manageTime(()->arrayListMaster.fill(arraySize)) + " s");
     }
 
-    private long manageTime(Runnable function){
+    private double manageTime(Runnable function){
         long start = System.nanoTime();
         function.run();
-        return System.nanoTime() - start;
+        long elapsed = System.nanoTime() - start;
+        return ( (double)elapsed / 1000000000.0);
     }
 }
