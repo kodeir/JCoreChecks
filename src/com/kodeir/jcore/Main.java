@@ -26,6 +26,7 @@ public class Main {
 
         System.out.println("*** check Collections ***");
         FunWithCollections funWithCollections = new FunWithCollections();
+        funWithCollections.measure();
         System.out.println();
     }
 
