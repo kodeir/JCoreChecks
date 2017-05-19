@@ -10,13 +10,19 @@ import java.util.Random;
 public class ArrayListMaster {
 
     private List<Integer> defaultIntArray = new ArrayList<>();
+    private List<Object> defaultObjArray = new ArrayList<>();
 
-    public void fill(int arraySize){
+    public void fillWithInt(int arraySize){
         Random random = new Random();
         for (int i = 0; i < arraySize; i++){
             defaultIntArray.add(random.nextInt(arraySize));
         }
-        defaultIntArray.toString();
+    }
+
+    public void fillWithObj(int arraySize){
+        for (int i = 0; i < arraySize; i++){
+            defaultObjArray.add(new Object());
+        }
     }
 
 }

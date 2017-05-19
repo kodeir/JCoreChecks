@@ -17,7 +17,10 @@ public class FunWithCollections {
         System.out.println("Enter array size: ");
         int arraySize = IOWorker.parseInt();
         if (arraySize > 0) {
-            System.out.println(manageTime(() -> arrayListMaster.fill(arraySize)) + " s");
+            System.out.print("Int: ");
+            System.out.println(manageTime(() -> arrayListMaster.fillWithInt(arraySize)) + " s");
+            System.out.print("Obj: ");
+            System.out.println(manageTime(() -> arrayListMaster.fillWithObj(arraySize)) + " s");
         } else {
             System.out.println("Please enter array size > 0");
         }
