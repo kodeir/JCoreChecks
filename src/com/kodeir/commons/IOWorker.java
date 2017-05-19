@@ -26,7 +26,7 @@ public class IOWorker {
             return i;
         }catch(NumberFormatException e){
             System.err.println("Invalid Format! " + e);
-            return 0;
+            return -1;
         }
     }
 }
