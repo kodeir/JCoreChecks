@@ -14,4 +14,13 @@ public class Algo {
         }
         return a;
     }
+
+    public static double sumArray(int[] a) {
+        int length = a.length;
+        double sum = 0;
+        for (int i=0; i<length; i++){
+            sum += a[i];
+        }
+        return sum;
+    }
 }

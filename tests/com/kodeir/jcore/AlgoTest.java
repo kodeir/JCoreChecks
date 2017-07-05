@@ -48,4 +48,10 @@ public class AlgoTest {
         assertArrayEquals(a, Algo.revertArray(b));
     }
 
+    @Test
+    public void sumArray0() throws Exception {
+        int[] a = {1,2,3};
+        assertEquals(6,Algo.sumArray(a),0);
+    }
+
 }
