@@ -5,22 +5,13 @@ package com.kodeir.jcore;
  */
 public class Algo {
 
-    public static int[] revertArray(int[] a) {
+    public static Object[] revertArray(Object[] a) {
         int length = a.length;
         for (int i=0; i<(length)/2; i++){
-            int flag = a[length-1-i];
+            Object flag = a[length-1-i];
             a[length-1-i] = a[i];
             a[i] = flag;
         }
         return a;
-    }
-
-    public static double sumArray(int[] a) {
-        int length = a.length;
-        double sum = 0;
-        for (int i=0; i<length; i++){
-            sum += a[i];
-        }
-        return sum;
     }
 }
