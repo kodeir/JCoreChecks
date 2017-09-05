@@ -1,26 +1,36 @@
 package com.kodeir.jcore.iterations;
 
-import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-
 /**
  * Created by Sergei "Kodeir" Riabinin on 16/03/17.
  */
-public class MonsterPart implements Iterable {
+public class MonsterPart {
 
-    @Override
-    public Iterator iterator() {
-        return new MonsterIterator();
+    public MonsterPart(){
+        this("default monster part", false);
     }
 
-    @Override
-    public void forEach(Consumer action) {
+    private String partName;
 
+    private boolean isDamaged;
+
+    public MonsterPart(String partName, boolean isDamaged) {
+        this.partName = partName;
+        this.isDamaged = isDamaged;
     }
 
-    @Override
-    public Spliterator spliterator() {
-        return null;
+    public String getPartName() {
+        return partName;
+    }
+
+    public void setPartName(String partName) {
+        this.partName = partName;
+    }
+
+    public boolean isDamaged() {
+        return isDamaged;
+    }
+
+    public void setDamaged(boolean damaged) {
+        isDamaged = damaged;
     }
 }
